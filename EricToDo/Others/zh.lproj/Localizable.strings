@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  EricToDo
+
+  Created by Yanqing Wang on 2024-11-08.
+  
+*/
+
+
+"Email empty" = "邮件为空";
+"Email not valid" = "请输入一个合法的邮件格式";

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  EricToDo
+
+  Created by Yanqing Wang on 2024-11-08.
+  
+*/
+
+
+"Email empty" = "email is empty";
+"Email not valid" = "Please input a valid email address";
+"Password empty" = "Password is empty";
