@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
-    var body: some View {
-        NavigationView {
-            LoginView()
-        }
+    @ObservedObject var vm = MainVM()
     
+    var body: some View {
+        if vm.isSignedIn, !vm.currentUserId.isEmpty {
+            TodoItemView()
+        }
+        else {
+            NavigationView {
+                LoginView()
+            }
+        }
     }
 }
 
