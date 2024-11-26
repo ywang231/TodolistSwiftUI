@@ -10,11 +10,11 @@ import SwiftUI
 struct ELButton: View {
     let _backgroundColor: Color
     let _title: String
-    let _action: (ELButton)->Void
+    let _action: ((ELButton)->Void)?
     
     var body: some View {
         Button {
-            self._action(self)
+            self._action?(self)
         } label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)

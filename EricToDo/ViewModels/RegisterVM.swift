@@ -26,7 +26,6 @@ class RegisterVM : ObservableObject {
                 return
             }
             self?.insertUserRecord(id: userId)
-            
         }
     }
     

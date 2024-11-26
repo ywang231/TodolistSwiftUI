@@ -13,7 +13,10 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            LoginHeaderView(backgroundColor: Color.pink, rotateDegree: 15.0, title: "EricToDo", subtitle: "Get Tasks Done")
+            LoginHeaderView(backgroundColor: Color.pink,
+                            rotateDegree: 15.0,
+                            title: "EricToDo",
+                            subtitle: "Get Tasks Done")
             Form {
                 if let errormsg = lVM.errorStr {
                     Text(errormsg)
@@ -35,7 +38,8 @@ struct LoginView: View {
             
             VStack {
                 Text("New around here?")
-                NavigationLink("Create An Account", destination:  RegisterView())
+                NavigationLink("Create An Account",
+                               destination:  RegisterView())
                     .foregroundColor(Color.blue)
             }
             .padding(.bottom, 10)

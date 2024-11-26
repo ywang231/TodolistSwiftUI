@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @StateObject var vm = RegisterVM()
+    @ObservedObject var vm = RegisterVM()
     
     var body: some View {
         VStack {
